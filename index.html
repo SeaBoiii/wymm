@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102e26">
+  <meta name="description" content="A little garden of memories, made by Aleem for Nurulain.">
+  <title>For Nurulain, with love — Aleem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a class="monogram" href="#home" aria-label="Back to the beginning">A <span>✦</span> N</a>
+      <a class="nav-link" href="#our-story">Our story</a>
+    </nav>
+    <div class="hero-shade"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow" data-content="heroEyebrow"></p>
+      <h1>For <em data-content="partnerName"></em>,<br>my favourite forever.</h1>
+      <p class="hero-note" data-content="heroNote"></p>
+      <a class="garden-button" href="#letter">
+        <span>Walk through our garden</span>
+        <span aria-hidden="true">↓</span>
+      </a>
+    </div>
+    <p class="scroll-note">A little piece of my heart, in bloom</p>
+  </header>
+
+  <main>
+    <section class="letter-section" id="letter">
+      <div class="botanical-mark reveal" aria-hidden="true">❦</div>
+      <p class="section-kicker reveal">A letter for you</p>
+      <div class="letter reveal">
+        <p class="letter-salutation">My dearest <span data-content="partnerShortName"></span>,</p>
+        <div id="letterBody"></div>
+        <p class="signature">Always yours,<strong data-content="yourName"></strong></p>
+      </div>
+    </section>
+
+    <section class="story-section" id="our-story">
+      <div class="section-heading reveal">
+        <p class="section-kicker">How we grew</p>
+        <h2>Our journey, in bloom</h2>
+        <p>Every garden begins with one small, beautiful moment.</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="reasons-section">
+      <div class="section-heading reveal">
+        <p class="section-kicker">In every season</p>
+        <h2>A few of a thousand reasons</h2>
+      </div>
+      <div class="reason-grid" id="reasons"></div>
+    </section>
+
+    <section class="promise-section">
+      <div class="promise-card reveal">
+        <span class="promise-flower" aria-hidden="true">✾</span>
+        <p class="section-kicker">My promise</p>
+        <blockquote data-content="promise"></blockquote>
+        <p>— <span data-content="yourName"></span></p>
+      </div>
+    </section>
+
+    <section class="proposal-section" id="proposal">
+      <div class="proposal-glow" aria-hidden="true"></div>
+      <div class="proposal-content reveal" id="proposalContent">
+        <p class="section-kicker">One last thing, my love</p>
+        <h2 data-content="proposalIntro"></h2>
+        <p data-content="proposalLead"></p>
+        <button class="proposal-button" id="proposalButton">Open my heart</button>
+      </div>
+      <div class="question-card" id="questionCard" aria-live="polite" aria-hidden="true">
+        <p>My heart has found its home in you.</p>
+        <h2><span data-content="partnerNickname"></span>,<br>will you marry me?</h2>
+        <div class="answer-row">
+          <button class="yes-button" id="yesButton">Yes, a thousand times ♡</button>
+          <button class="also-yes-button" id="alsoYesButton">Of course, yes!</button>
+        </div>
+        <p class="signed">With all my love, <span data-content="yourName"></span></p>
+      </div>
+      <div class="celebration" id="celebration" aria-live="polite">
+        <span>✦</span>
+        <h2>Our forever begins here.</h2>
+        <p>I love you, <span data-content="partnerNickname"></span>. Today, tomorrow, always.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love by <span data-content="yourName"></span> for <span data-content="partnerName"></span></p>
+    <span>Est. forever</span>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
