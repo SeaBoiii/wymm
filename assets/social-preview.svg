@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">A little garden, made with love</title>
+  <desc id="desc">A spoiler-safe moonlit botanical card in forest green, cream, and antique gold.</desc>
+  <defs>
+    <radialGradient id="sky" cx="68%" cy="20%" r="90%">
+      <stop stop-color="#285047"/>
+      <stop offset=".58" stop-color="#102e26"/>
+      <stop offset="1" stop-color="#061713"/>
+    </radialGradient>
+    <radialGradient id="moon">
+      <stop stop-color="#fff8df"/>
+      <stop offset="1" stop-color="#d8c58f"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <circle cx="933" cy="135" r="56" fill="#e5d6aa" opacity=".22" filter="url(#glow)"/>
+  <circle cx="933" cy="135" r="38" fill="url(#moon)"/>
+  <g fill="#d8bb73" opacity=".82">
+    <circle cx="173" cy="116" r="3"/><circle cx="1050" cy="286" r="4"/><circle cx="804" cy="84" r="2.5"/>
+    <circle cx="349" cy="174" r="2"/><circle cx="1003" cy="76" r="2"/>
+    <path d="m264 95 5 11 11 5-11 5-5 11-5-11-11-5 11-5z"/>
+  </g>
+  <g fill="none" stroke="#6f846f" stroke-width="7" stroke-linecap="round">
+    <path d="M-35 541C100 407 167 266 197 4"/>
+    <path d="M1235 572c-140-127-215-274-244-576"/>
+    <path d="M0 585c219-83 386-78 600 7 214-85 381-90 600-7"/>
+  </g>
+  <g fill="#f7f2e8" stroke="#879a80" stroke-width="2">
+    <g transform="translate(118 378)"><ellipse rx="17" ry="38"/><ellipse rx="17" ry="38" transform="rotate(72)"/><ellipse rx="17" ry="38" transform="rotate(144)"/><circle r="9" fill="#c6a96c" stroke="none"/></g>
+    <g transform="translate(181 194) scale(.78)"><ellipse rx="17" ry="38"/><ellipse rx="17" ry="38" transform="rotate(72)"/><ellipse rx="17" ry="38" transform="rotate(144)"/><circle r="9" fill="#c6a96c" stroke="none"/></g>
+    <g transform="translate(1047 387) scale(.92)"><ellipse rx="17" ry="38"/><ellipse rx="17" ry="38" transform="rotate(72)"/><ellipse rx="17" ry="38" transform="rotate(144)"/><circle r="9" fill="#c6a96c" stroke="none"/></g>
+  </g>
+  <g text-anchor="middle">
+    <text x="600" y="287" fill="#e0c88d" font-family="Arial,sans-serif" font-size="19" letter-spacing="7">A LITTLE GARDEN</text>
+    <text x="600" y="385" fill="#fffdf7" font-family="Georgia,serif" font-size="88" font-style="italic">made with love.</text>
+    <text x="600" y="449" fill="#b9c7b3" font-family="Arial,sans-serif" font-size="16" letter-spacing="5">SOMETHING BEAUTIFUL IS IN BLOOM</text>
+  </g>
+  <rect x="30" y="30" width="1140" height="570" rx="2" fill="none" stroke="#d8bb73" stroke-opacity=".48"/>
+</svg>

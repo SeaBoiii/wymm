@@ -1,0 +1,24 @@
+{
+  "name": "living-memory-garden",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A private-feeling, statically generated garden of memories.",
+  "scripts": {
+    "check": "node build.mjs --check",
+    "check:release": "node build.mjs --check --release",
+    "build": "node build.mjs",
+    "test": "npm run test:unit && npm run test:browser",
+    "test:unit": "node --test tests/content.unit.test.mjs",
+    "test:browser": "npm run build && playwright test",
+    "preview": "npm run build && node tests/server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
+    "@playwright/test": "1.62.0",
+    "esbuild": "0.28.1"
+  }
+}

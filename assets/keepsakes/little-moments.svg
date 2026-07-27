@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">A collection of little moments</title>
+  <desc id="desc">Overlapping keepsake cards hold a crescent moon, teacups, a flower, and small golden stars.</desc>
+  <defs>
+    <filter id="s" x="-20%" y="-20%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#102e26" flood-opacity=".14"/>
+    </filter>
+    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0b2924"/><stop offset="1" stop-color="#31594c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#d8ddcf"/>
+  <path d="M0 525c117-82 220-58 314-9 105 55 225 67 486-26v110H0z" fill="#c5cfbc"/>
+  <g filter="url(#s)">
+    <g transform="translate(104 98) rotate(-7 190 185)">
+      <rect width="380" height="370" rx="5" fill="#fffdf7"/>
+      <rect x="24" y="24" width="332" height="254" fill="url(#night)"/>
+      <circle cx="193" cy="137" r="72" fill="#f0ddb0"/>
+      <circle cx="225" cy="112" r="72" fill="#173a30"/>
+      <g fill="#dfc278"><circle cx="87" cy="76" r="3"/><circle cx="293" cy="194" r="4"/><circle cx="116" cy="211" r="2"/><path d="m303 72 5 11 11 5-11 5-5 11-5-11-11-5 11-5z"/></g>
+      <path d="M58 317h176M58 338h132" stroke="#99a694" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+    </g>
+    <g transform="translate(410 142) rotate(8 135 172)">
+      <rect width="270" height="345" rx="5" fill="#f9f2e5"/>
+      <rect x="21" y="21" width="228" height="218" fill="#d5c294"/>
+      <ellipse cx="98" cy="184" rx="52" ry="19" fill="#b08f54" opacity=".35"/>
+      <path d="M53 109h91v71c0 28-20 43-46 43s-45-15-45-43z" fill="#fffdf7" stroke="#173a30" stroke-width="4"/>
+      <path d="M144 125h17c32 0 32 47 0 47h-17" fill="none" stroke="#173a30" stroke-width="4"/>
+      <path d="M88 96c-16-24 17-28 0-52M113 95c-14-19 15-25 0-42" fill="none" stroke="#fffdf7" stroke-width="5" stroke-linecap="round"/>
+      <g transform="translate(202 92) scale(.68)" fill="#fffdf7" stroke="#6f846f" stroke-width="2"><ellipse rx="13" ry="28"/><ellipse rx="13" ry="28" transform="rotate(72)"/><ellipse rx="13" ry="28" transform="rotate(144)"/><circle r="7" fill="#d8bb73" stroke="none"/></g>
+      <path d="M42 287h172M42 310h128" stroke="#99a694" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+    </g>
+  </g>
+  <g fill="#b29253"><circle cx="78" cy="73" r="5"/><circle cx="714" cy="508" r="4"/><path d="m710 82 7 15 15 7-15 7-7 15-7-15-15-7 15-7z"/></g>
+</svg>

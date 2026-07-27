@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Shared laughter and easy conversation</title>
+  <desc id="desc">Two elegant conversation bubbles meet among jasmine flowers, stars, and warm paper textures.</desc>
+  <defs>
+    <radialGradient id="paper" cx="50%" cy="45%" r="70%">
+      <stop stop-color="#fffdf8"/><stop offset="1" stop-color="#e9dfca"/>
+    </radialGradient>
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="13" stdDeviation="15" flood-color="#102e26" flood-opacity=".13"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="#173a30"/>
+  <circle cx="140" cy="96" r="170" fill="#22483c"/>
+  <circle cx="706" cy="548" r="260" fill="#0d2822"/>
+  <g filter="url(#drop)">
+    <path d="M105 139h338a44 44 0 0 1 44 44v139a44 44 0 0 1-44 44H272l-83 61 22-61H105a44 44 0 0 1-44-44V183a44 44 0 0 1 44-44z" fill="url(#paper)"/>
+    <path d="M361 282h334a44 44 0 0 1 44 44v112a44 44 0 0 1-44 44H607l24 68-92-68H361a44 44 0 0 1-44-44V326a44 44 0 0 1 44-44z" fill="#d9c594"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M139 234h269M139 275h183" stroke="#6c8070" stroke-width="13"/>
+    <path d="M395 363h260M395 406h150" stroke="#173a30" stroke-width="13" opacity=".72"/>
+  </g>
+  <path d="M509 189c-27-31-77-2-60 37 13 31 60 60 60 60s48-29 61-60c17-39-34-68-61-37z" fill="#bd8d7a"/>
+  <g fill="#e1c478"><circle cx="631" cy="99" r="5"/><circle cx="111" cy="493" r="4"/><path d="m664 172 7 15 15 7-15 7-7 15-7-15-15-7 15-7z"/></g>
+  <g fill="#fffdf7" stroke="#8fa08a" stroke-width="2">
+    <g transform="translate(662 474)"><ellipse rx="13" ry="29"/><ellipse rx="13" ry="29" transform="rotate(72)"/><ellipse rx="13" ry="29" transform="rotate(144)"/><circle r="7" fill="#d8bb73" stroke="none"/></g>
+    <g transform="translate(102 116) scale(.82)"><ellipse rx="13" ry="29"/><ellipse rx="13" ry="29" transform="rotate(72)"/><ellipse rx="13" ry="29" transform="rotate(144)"/><circle r="7" fill="#d8bb73" stroke="none"/></g>
+  </g>
+</svg>

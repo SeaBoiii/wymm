@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">A first hello, kept like a pressed flower</title>
+  <desc id="desc">An illustrated envelope, jasmine sprig, moon, and tiny golden stars on warm paper.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="35%" r="65%">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="1" stop-color="#e7deca"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#173a30" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="#efe8d8"/>
+  <rect x="28" y="28" width="744" height="544" rx="4" fill="url(#glow)" stroke="#b89b62" stroke-opacity=".45"/>
+  <circle cx="400" cy="225" r="142" fill="#173a30"/>
+  <circle cx="444" cy="177" r="48" fill="#ead8a8"/>
+  <g fill="#d8bb73" opacity=".9">
+    <circle cx="328" cy="155" r="3"/><circle cx="501" cy="247" r="4"/><circle cx="298" cy="249" r="2.5"/>
+    <path d="m508 135 4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M213 309h374v201H213z" fill="#fffdf7" stroke="#a98c59" stroke-width="3"/>
+    <path d="m214 312 186 137 186-137" fill="#f5eedf" stroke="#a98c59" stroke-width="3"/>
+    <path d="m214 507 135-120 51 37 51-37 135 120" fill="#fbf7ee" stroke="#a98c59" stroke-width="3"/>
+    <circle cx="400" cy="426" r="24" fill="#173a30"/>
+    <path d="m388 426 8 8 18-20" fill="none" stroke="#ead8a8" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke="#6f846f" stroke-width="5" stroke-linecap="round">
+    <path d="M132 504c46-82 72-171 89-273"/>
+    <path d="M652 489c-32-64-48-124-61-199"/>
+  </g>
+  <g fill="#fffdf7" stroke="#899980" stroke-width="2">
+    <g transform="translate(180 355)"><ellipse rx="13" ry="28"/><ellipse rx="13" ry="28" transform="rotate(72)"/><ellipse rx="13" ry="28" transform="rotate(144)"/><circle r="7" fill="#d8bb73" stroke="none"/></g>
+    <g transform="translate(202 286) scale(.8)"><ellipse rx="13" ry="28"/><ellipse rx="13" ry="28" transform="rotate(72)"/><ellipse rx="13" ry="28" transform="rotate(144)"/><circle r="7" fill="#d8bb73" stroke="none"/></g>
+    <g transform="translate(616 376) scale(.9)"><ellipse rx="13" ry="28"/><ellipse rx="13" ry="28" transform="rotate(72)"/><ellipse rx="13" ry="28" transform="rotate(144)"/><circle r="7" fill="#d8bb73" stroke="none"/></g>
+  </g>
+</svg>

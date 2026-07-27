@@ -1,0 +1,80 @@
+name: Validate, build, and deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      reviewed_private_content:
+        description: I reviewed every name, date, memory, image, caption, final note, and social preview.
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.event_name == 'workflow_dispatch' && 'pages-production' || format('pages-validation-{0}', github.ref) }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate editable content
+        run: npm run check
+
+      - name: Require finished private content for release
+        if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.reviewed_private_content
+        run: npm run check:release
+
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium webkit
+
+      - name: Run automated tests
+        run: npm test
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Verify deploy artifact
+        run: test -f dist/index.html
+
+      - name: Upload validated site
+        if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.reviewed_private_content
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.reviewed_private_content
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Deploy validated site
+        id: deployment
+        uses: actions/deploy-pages@v4
