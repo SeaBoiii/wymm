@@ -23,6 +23,9 @@ concurrency:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    env:
+      VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || '/' }}
+      VITE_PUBLIC_SITE_URL: ${{ vars.VITE_PUBLIC_SITE_URL || 'https://wymm.aleemxnurul.love/' }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
